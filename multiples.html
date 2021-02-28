@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function show(){
+		var i;
+		var number=[];
+		
+		for (i=1; i<=100;i++) {
+			if( i%3==0 && i%5==0){
+				number.push("FizzBuss");
+			}
+			else if(i%3==0)
+			{
+          number.push("Fizz");
+			}
+			else if (i%5==0) {
+			number.push("Buss");
+	
+			} 
+			else
+			{
+				number.push(i);
+			}
+		console.log(number);
+		
+		}
+		
+		for(i=0;i<number.length;i++){ 
+			var tag = document.createElement("p");
+        
+         var text = document.createTextNode(number[i]);
+          tag.appendChild(text);
+            var element = document.getElementById("answer");
+			element.appendChild(tag);
+		}
+		
+
+}
+</script>
+</head>
+<body>
+<button onclick="show()">number in range</button>
+<div id="answer" style="width: 20px; height: 100;"></div>
+
+</body>
+</html>

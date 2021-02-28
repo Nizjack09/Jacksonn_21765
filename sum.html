@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function show(){
+		var i,a,b;
+		var sum=0;
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		for (i=a; i<=b;i++) {
+		console.log(i);
+		sum=sum+i;
+	    
+		}
+		document.getElementById("answer").value=sum;
+
+}
+</script>
+</head>
+<body>
+Enter the first Number: <input id="num1">
+Enter the last number: <input id="num2">
+<button onclick="show()"> Sum of Range Numbers</button>
+<input id="answer">
+</body>
+</html>

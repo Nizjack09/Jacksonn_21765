@@ -1,0 +1,82 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>My Work</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header"></div><!--End of header-->
+
+<div id="menu">
+<ul>
+  <li><a href="index.html">BACK TO HOME</a></li>
+  <li><a class="active" href="animted.html">Animated Images</a></li>
+  <li><a href="work.html">Contact Us</a></li>
+  <!--<li><a href="work.html">My Work Here</a></li>-->
+</ul>
+</div><!--End of menu-->
+
+<div id="content">
+	<div class="contentarea">
+		<div class="leftside">
+			<p>Here it all Animated Image on 1.</p>
+		</div>
+		
+<div class="centerside">
+	<div class="container">
+        <img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png">
+		<img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png">
+		<img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png">
+		<img src="https://res.cloudinary.com/websway/image/upload/v1538242836/img_vkgzwy.png">
+		<div class="image">
+			<img src="http://pixelcurse.com/wp-content/uploads/2011/02/minimalist_landscape_8.jpg" class="img" alt="">
+		</div>
+	</div>
+</div><!--End of leftside-->
+
+<div class="rightside">
+</div><!--End of rightside-->
+
+
+	</div><!--End of Contentarea-->
+</div><!--End of Content-->
+<div id="footer"></div><!--End of footer-->
+
+<div id="footer-footer">
+copy&copy; 2021 All rights reserved to Nyiranzeyimana Nurdine.
+</div><!--End of footer-->
+</div><!--End of Wrapper-->
+</body>
+</html>
+<script>
+function validate(){
+	if(document.form.name.value=="")
+  	{
+    //alert("Please Enter Your names");
+	document.getElementById("messagename").innerHTML="** Enter your names **";
+	document.form.name.focus();
+	return false;
+	}
+	else if(document.form.email.value=="")
+  	{
+    //alert("Please Enter Your email");
+	document.getElementById("messageemail").innerHTML="** Enter your email **";
+	document.form.email.focus();
+	return false;
+	}  
+	else if(document.form.comment.value=="")
+  	{
+    //alert("Please Enter Your email");
+	document.getElementById("messagecomment").innerHTML="** Enter your comment **";
+	document.form.comment.focus();
+	return false;
+	} 
+	else{
+		alert("Your comment sent successfully!!");	
+	}  
+}
+</script>

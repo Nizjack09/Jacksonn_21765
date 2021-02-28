@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<title>Insert row in a table - w3resource</title>
+<link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="scroll.css">
+</head><body>
+<ul>
+              
+              <li><a  href="Assignment1.html">Question1</a></li>
+              <li><a href="Assignment2.html">Question2</a></li>
+              <li><a href="Assignment3.html">Question3</a></li>
+              <li><a href="Assignment4.html">Question4</a></li>
+              <li><a href="Assignment5.html">Question5</a></li>
+              <li><a href="Assignment6.html">Question6</a></li>
+              <li><a href="Assignment7.html">Question7</a></li>
+              <li><a href="Assignment8.html">Question8</a></li>
+              <li><a href="Assignment9.html">Question9</a></li>
+              <br><br>
+              <li><a href="Assignment10.html">Question10</a></li>
+              <li><a href="Assignment11.html">Question11</a></li>
+              </ul>
+        <br><br><br><br><br><br><br><br><br><br>
+<table id="sampleTable" border="1" style="color:white">
+<tr><td>Row1 cell1</td>
+<td>Row1 cell2</td></tr>
+<tr><td>Row2 cell1</td>
+<td>Row2 cell2</td></tr>
+</table><br>
+<input type="button" onclick="insert_Row()"
+value="Insert row">
+</body></html>
+<script type="text/javascript">
+	function insert_Row()
+{
+var x=document.getElementById('sampleTable').insertRow(0);
+var y = x.insertCell(0);
+var z = x.insertCell(1);
+y.innerHTML="New Cell1";
+z.innerHTML="New Cell2";
+}
+</script>

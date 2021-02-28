@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+	function show(){
+		var i,j,a,b;
+		var number=[];
+		a=Number(document.getElementById("num1").value);
+		b=Number(document.getElementById("num2").value);
+		j=0;
+		for (i=a+1; i<b;i++) {
+		console.log(i);
+		number[j]=i;
+	    j++;
+		}
+		document.getElementById("answer").innerHTML=number;
+
+}
+</script>
+</head>
+<body>
+Enter the first Number: <input id="num1">
+Enter the last number: <input id="num2">
+<button onclick="show()">number in range</button>
+<div id="answer"></div>
+</body>
+</html>

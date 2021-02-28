@@ -1,0 +1,17 @@
+[
+    {
+    name:'jackox',
+    id:20765,
+    age:20,
+    position:'developer',
+    gender:'male'
+},
+{
+    name:'jackson',
+    id:21765,
+    age:21,
+    position:'manager',
+    gender:'male'
+}
+
+]

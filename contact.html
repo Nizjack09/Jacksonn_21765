@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">  
+	 <link rel="stylesheet" href="bootstrap.css">
+<style>
+	body {
+	     background-color: green;
+	}
+</style>
+<body>
+	
+
+	<body>
+		<div id="wrapper">
+		<div id="header"></div><!--End of header-->
+		
+		<div id="menu">
+		<ul>
+		 
+		  <li><a class="active" href="#">Contact Us</a></li>
+		  <!--<li><a href="work.html">My Work Here</a></li>-->
+		</ul>
+		</div><!--End of menu-->
+		
+		<div id="content">
+			<div class="contentarea">
+				<div class="leftside">
+					<p>Here it all about form validation.</p>
+				</div>
+				
+		<div class="centerside">
+			<div class="bottom-inner-more-cont">
+				<div class="mst-split"></div>
+					<div class="coms-widget"> 
+						<div class="coms-ttle-area"><h2>Post Your Comment</h2>
+							<span class="com-count">Comments(100%)</span>
+							<div style="clear:both"></div>
+						</div>
+					<div class="com-frm">
+					<form name="form" action="" onSubmit="return check();">
+						<div class="reply-msg"></div>
+						<label>Name</label>
+						<input type="text" class="nme-input" id="name" name="name" placeholder="Enter your Name">
+						<label id="messagename"></label><br>
+						<label>Email</label>
+						<input type="email" class="nme-input" id="email" name="email" placeholder="Enter your Email">
+						<label id="messageemail"></label><br>
+						<label>Comment</label>
+						<textarea class="com-input" id="comment" name="comment" placeholder="Enter your Comment"></textarea>
+						<label id="messagecomment"></label><br>
+						<div class="captcha-bg" style="display:none">
+							<label>Leave This Blank</label>
+							<input type="text" class="nme-input" id="blank" name="blank" placeholder="Leave it Blank">
+						</div>
+						<button class="sub-btn" id="submit" onclick="return validate();" name="Submit">Submit</button>
+					</form>				
+					</div> <!-- END OF com-frm -->
+								 
+					</div> <!-- END OF coms-widget -->
+								  
+					
+			</div>  
+		</div><!--End of leftside-->
+		
+		<div class="rightside">
+		</div><!--End of rightside-->
+		
+		
+			</div><!--End of Contentarea-->
+		</div><!--End of Content-->
+
+		<a  href="factorial.html">factorial</a><br>
+		<a  href="fibonacci.html">FIBONACCI</a><br>
+		<a  href="mergesort.html">MERGESSORT</a><br>
+		<a  href="multiples.html">MULTIPLES</a><br>
+		<a  href="range.html">RANGE</a><br>
+		<a  href="sum.html">SUM</a>
+		<div id="footer"></div><!--End of footer-->
+		<p>11 QUESTIONS</p>
+		<nav>
+  
+   
+             
+			<ul>
+		   
+		   <li><a  href="Assignment1.html">CLICK HERE TO SEE ALL 11 QUESTION</a></li>
+		   
+		   
+	   </ul>
+</nav>
+		<div id="footer-footer">
+		copy&copy; 2021 designed by jackson.
+		</div><!--End of footer-->
+		</div><!--End of Wrapper-->
+		</body>
+		</html>
+		<script>
+		function validate(){
+			if(document.form.name.value=="")
+			  {
+			//alert("Please Enter Your names");
+			document.getElementById("messagename").innerHTML="** Enter your names **";
+			document.form.name.focus();
+			return false;
+			}
+			else if(document.form.email.value=="")
+			  {
+			//alert("Please Enter Your email");
+			document.getElementById("messageemail").innerHTML="** Enter your email **";
+			document.form.email.focus();
+			return false;
+			}  
+			else if(document.form.comment.value=="")
+			  {
+			//alert("Please Enter Your email");
+			document.getElementById("messagecomment").innerHTML="** Enter your comment **";
+			document.form.comment.focus();
+			return false;
+			} 
+			else{
+				alert("Your comment sent successfully!!");	
+			}  
+		}
+		</script>
+			<h> any suggestion contact on this address</h>
+		
+	
+	
+</body>	
